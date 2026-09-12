@@ -52,3 +52,18 @@ Classes possibles : positif, négatif, neutre.
 
 Résultat :
 ![Résultat 2.2](captures/partie2_oneshot.png)
+
+### Tâche 2.3 — Few-shot (plusieurs exemples)
+
+Prompt :
+
+Exemples :
+"Livraison rapide, très satisfait" → positif
+"Colis en retard, aucune excuse" → négatif
+"Emballage correct mais produit un peu cher" → neutre
+
+Classe le commentaire suivant : "Le service est rapide mais l'application plante régulièrement."
+Classes possibles : positif, négatif, neutre.
+
+Résultat :
+![Résultat 2.3](captures/partie2_fewshot.png)
