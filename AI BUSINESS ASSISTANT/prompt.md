@@ -204,3 +204,29 @@ Réponds uniquement avec le JSON, sans aucun texte avant ou après.
 **Résultat obtenu :**
 ![Résultat 4.1](captures/partie4_json.png)
 
+### Tâche 4.2 — Ajout des règles de validation
+
+**Prompt (version enrichie du prompt 4.1.avec la validation incluse ) :**
+
+Analyse le commentaire client suivant et retourne uniquement un JSON avec les champs :
+
+sentiment (chaîne de caractères)
+categorie (chaîne de caractères)
+urgence (chaîne de caractères)
+probleme (chaîne de caractères)
+confiance (nombre décimal)
+
+Commentaire : "Ma commande a été livrée avec plus d'une heure de retard, je suis très mécontent."
+
+Règles de sortie à respecter strictement :
+
+Le format doit être un JSON valide
+Aucune propriété supplémentaire ne doit être ajoutée
+sentiment doit valoir uniquement : positif, negatif ou neutre
+confiance doit être un nombre compris entre 0 et 1
+urgence doit valoir uniquement : faible, moyenne ou élevée
+
+Réponds uniquement avec le JSON, sans aucun texte avant ou après.
+
+**Résultat obtenu :**
+![Résultat 4.2](captures/partie4_json_validation.png)
