@@ -331,3 +331,45 @@ Longueur maximale : 150 mots
 
 **Résultat :**
 ![Résultat 5.5](captures/partie5_email.png)
+
+## Partie 6 — Prompt Engineering pour le Machine Learning
+
+### Tâche 6.1 — Stratégies de traitement des données
+
+**Prompt :**
+
+Voici un dataset de capteurs IoT installés dans un bâtiment (605 lignes au total) :
+
+Colonnes : temperature (float), humidity (float), pressure (float), consumption (float), status (catégorielle : normal/alerte/critique)
+
+Échantillon de 15 lignes :
+temperature | humidity | pressure | consumption | status
+22.4 | 45.2 | 1013.1 | 340.5 | normal
+23.1 | 46.8 | 1012.7 | 355.2 | normal
+21.9 | 44.5 | 1013.4 | 332.0 | normal
+24.0 | 47.9 | 1012.2 | 360.8 | normal
+NaN | 47.1 | 1013.5 | 348.0 | normal
+22.3 | 47.0 | 1013.2 | 347.8 | normal
+22.3 | 47.0 | 1013.2 | 347.8 | normal
+28.6 | 52.3 | 1010.8 | 512.4 | alerte
+29.1 | 53.0 | 1010.5 | 528.7 | alerte
+41.7 | 44.9 | 1011.9 | 890.3 | critique
+30.2 | 54.1 | 1009.9 | 540.2 | alerte
+22.0 | 45.0 | 1013.0 | 338.0 | normal
+-5.0 | 46.0 | 1013.1 | 340.0 | normal
+22.6 | 45.6 | 1013.0 | 342.1 | normal
+33.5 | 58.2 | 1008.7 | 610.0 | critique
+
+Propose des stratégies de traitement pour chacun des éléments suivants :
+
+Valeurs manquantes
+Doublons
+Valeurs aberrantes
+Variables catégorielles
+
+Pour chacun, indique : la méthode de détection, la stratégie de traitement, les risques associés.
+
+Format : tableau avec colonnes Problème / Détection / Traitement / Risques associés.
+
+**Résultat :**
+![Résultat 6.1](captures/partie6_tache1.png)
