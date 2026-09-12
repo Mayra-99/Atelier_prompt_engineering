@@ -291,3 +291,26 @@ Réponds uniquement en JSON avec les champs categorie et justification.
 
 **Résultat :**
 ![Résultat 5.3](captures/partie5_ticket.png)
+
+### Tâche 5.4 — Extraction d'informations depuis une facture
+
+
+
+**Prompt :**
+
+Extrais les informations suivantes de la facture ci-dessous : numéro_facture, date, client, montant_ht, tva, montant_ttc.
+
+Facture : [**Facture fournie :**
+
+FACTURE N° FA-2026-0847
+Date : 5 septembre 2026
+Client : Restaurant Teranga
+Montant HT : 125 000 FCFA
+Montant TTC : 125 000 FCFA
+]
+
+Retourne uniquement un JSON valide avec ces 6 champs. Si une information est absente, indique null.
+
+
+**Résultat :**
+![Résultat 5.4](captures/partie5_facture.png)
