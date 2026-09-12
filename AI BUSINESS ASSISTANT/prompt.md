@@ -431,3 +431,22 @@ Format : une section par métrique.
 
 **Résultat :**
 ![Résultat 6.4](captures/partie6_tache4.png)
+
+### Tâche 6.5 — Métriques de régression
+
+**Prompt :**
+
+Explique les métriques de régression suivantes : MAE, MSE, RMSE.
+
+Pour chacune, donne :
+
+La définition
+L'interprétation
+Un exemple concret
+Le contexte dans lequel elle est particulièrement utile
+
+Format : une section par métrique.
+
+
+**Résultat :**
+![Résultat 6.5](captures/partie6_tache5.png)
