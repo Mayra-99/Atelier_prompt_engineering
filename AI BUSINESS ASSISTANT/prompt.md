@@ -73,6 +73,15 @@ Résultat autre fenetre :
 ![Résultat 2.3](captures/partie2_fewshot_1.png)
 
 
+### Tâche 2.4 — Prompt structuré (5 blocs)
 
+Prompt :
 
+Rôle : Tu es un analyste chargé de classifier des avis clients.
+Tâche : Classe le commentaire suivant selon le sentiment exprimé.
+Données d'entrée : "Le service est rapide mais l'application plante régulièrement."
+Contraintes : Classes possibles uniquement : positif, négatif, neutre. Réponds par un seul mot.
+Format de sortie : Le mot de la catégorie, sans explication.
 
+Résultat :
+![Résultat 2.4](captures/partie2_structure.png)
