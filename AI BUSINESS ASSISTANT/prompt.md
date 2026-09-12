@@ -167,3 +167,40 @@ Corrige ta réponse si nécessaire.
 
 **Résultat du second prompt :**
 ![Résultat vérification](captures/partie3_2_prompt2.png)
+
+
+## Partie 4 — Sorties structurées
+
+### Tâche 4.1 — Prompt JSON avec champs typés
+
+**Commentaire client à analyser :**
+« Ma commande a été livrée avec plus d'une heure de retard, je suis très mécontent. »
+
+**Prompt :**
+Analyse le commentaire client suivant et retourne uniquement un JSON avec les champs :
+
+sentiment (chaîne de caractères) : positif, negatif ou neutre
+categorie (chaîne de caractères) : le thème du commentaire, par exemple livraison, produit ou service
+urgence (chaîne de caractères) : faible, moyenne ou élevée
+probleme (chaîne de caractères) : description courte du problème identifié
+confiance (nombre décimal) : score de confiance entre 0 et 1
+
+Commentaire : "Ma commande a été livrée avec plus d'une heure de retard, je suis très mécontent."
+
+Réponds uniquement avec le JSON, sans aucun texte avant ou après.
+
+
+**Résultat attendu (exemple donné dans l'énoncé) :**
+```json
+{
+  "sentiment": "negatif",
+  "categorie": "livraison",
+  "urgence": "moyenne",
+  "probleme": "Retard de livraison",
+  "confiance": 0.91
+}
+```
+
+**Résultat obtenu :**
+![Résultat 4.1](captures/partie4_json.png)
+
