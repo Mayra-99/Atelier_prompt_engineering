@@ -394,3 +394,21 @@ Format : une section par visualisation.
 ![Résultat 6.2](captures/partie6_tache2.png)
 
 
+### Tâche 6.3 — Modèles de prédiction
+
+**Prompt :**
+
+Propose plusieurs modèles adaptés à la prédiction de la consommation énergétique du bâtiment.
+
+Pour chaque modèle, indique :
+
+Le principe
+Les avantages
+Les limites
+Le type de problème
+Les métriques pertinentes
+
+Format : tableau avec colonnes Modèle / Principe / Avantages / Limites / Type de problème / Métriques.
+
+**Résultat :**
+![Résultat 6.3](captures/partie6_tache3.png)
