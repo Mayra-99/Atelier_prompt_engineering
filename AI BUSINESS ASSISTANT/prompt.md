@@ -258,8 +258,7 @@ Le projet de migration du système de gestion des stocks de BARAKA DISTRIBUTION 
 
 ### Tâche 5.2 — Traduction FR → EN
 
-**Document à traduire :**
-« La chaîne du froid est garantie de bout en bout grâce à des glacières certifiées ISO 22000. Chaque livraison est accompagnée d'un relevé de température consigné au moment du dépôt chez le client. »
+
 
 **Prompt :**
 Traduis le document suivant du français vers l'anglais.
@@ -277,3 +276,18 @@ Document : [**Document à traduire :**
 
 **Résultat :**
 ![Résultat 5.2](captures/partie5_traduction.png)
+### Tâche 5.3 — Classification d'un ticket informatique
+
+
+
+**Prompt :**
+Classe le ticket informatique suivant dans l'une des catégories suivantes uniquement : réseau, logiciel, matériel, sécurité, accès, autre.
+
+Ticket : [**Ticket à classer :**
+« Je n'arrive plus à me connecter à mon compte depuis ce matin, le mot de passe est refusé alors qu'il est correct. »]
+
+Réponds uniquement en JSON avec les champs categorie et justification.
+
+
+**Résultat :**
+![Résultat 5.3](captures/partie5_ticket.png)
