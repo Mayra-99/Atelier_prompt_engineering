@@ -450,3 +450,23 @@ Format : une section par métrique.
 
 **Résultat :**
 ![Résultat 6.5](captures/partie6_tache5.png)
+
+## Partie 7 — Prompt Engineering et RAG
+
+### Tâche 7.1 — Document de référence
+
+**Document utilisé :** *La psychologie humaine — Fondements théoriques et pathologies associées* (PDF, 10 pages)
+
+---
+### Tâche 7.2 — Trois prompts, une seule question
+
+#### Prompt A — sans fournir le document
+
+**Prompt :**
+
+Quels sont les facteurs de protection contre les troubles mentaux mentionnés dans le document, et quel modèle explicatif combine facteurs de vulnérabilité et facteurs de stress ?
+
+
+
+**Résultat :**
+![Résultat Prompt A](captures/partie7_prompt1.png)
