@@ -85,3 +85,28 @@ Format de sortie : Le mot de la catégorie, sans explication.
 
 Résultat :
 ![Résultat 2.4](captures/partie2_structure.png)
+
+### Tâche 2.5 — Comparaison des 4 techniques
+
+**Méthodologie :** chaque prompt testé dans une fenêtre séparée pour éviter toute contamination.
+
+| Critère | Zero-shot | One-shot | Few-shot | Structuré |
+|---|---|---|---|---|
+| Résultat obtenu | Négatif | Négatif | Négatif | Négatif |
+| Longueur du prompt | Très courte | Courte | Longue (exemples à fournir) | Moyenne |
+| Effort de construction | Minimal | Faible | Élevé (choisir de bons exemples) | Moyen (organiser les blocs) |
+| Coût en tokens | Faible | Faible | Élevé | Moyen |
+| Robustesse sur un cas ambigu | Incertaine (dépend du modèle) | Incertaine | Dépend fortement des exemples choisis | Incertaine sans exemples |
+| Lisibilité / maintenabilité | Faible (aucune structure) | Faible | Moyenne | Élevée (réutilisable en template) |
+
+**Observation sur la pertinence des techniques :**
+Pour ce commentaire précis, les 4 techniques convergent vers le même résultat — ce qui ne veut pas dire qu'elles se valent pour autant. Le few-shot est la seule technique dont le résultat **dépend directement des exemples fournis** : lors d'un premier essai (fenêtre partagée, donc à écarter), le few-shot avait divergé vers "neutre" à cause d'un exemple fourni structurellement proche du commentaire testé. Cela montre que le few-shot est puissant mais **sensible au choix des exemples** — un mauvais exemple peut orienter la réponse dans la mauvaise direction, contrairement au zero-shot qui ne dépend d'aucun exemple.
+
+Le prompt structuré, lui, n'a pas mieux résolu l'ambiguïté que le zero-shot dans ce test (aucun exemple fourni) — sa vraie force n'est pas la fiabilité de la réponse mais la **clarté et la réutilisabilité** du prompt (facile à transformer en template, voir Partie 4.5 de la veille).
+
+**Recommandation :**
+- Zero-shot / one-shot : suffisant pour des cas simples et non ambigus, coût minimal
+- Few-shot : à privilégier si des cas ambigus reviennent souvent, mais exige de choisir des exemples représentatifs et non trompeurs
+- Structuré : à privilégier dès que le prompt doit être réutilisé ou maintenu dans une application, indépendamment de sa fiabilité brute
+
+**Limite méthodologique observée :** un premier test réalisé dans une même fenêtre de discussion avait montré une divergence (few-shot → neutre) due à une contamination par l'historique de conversation plutôt qu'à la technique elle-même. Toute comparaison de prompts doit être effectuée dans des fenêtres séparées.
