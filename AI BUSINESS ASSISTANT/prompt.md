@@ -470,3 +470,16 @@ Quels sont les facteurs de protection contre les troubles mentaux mentionnés da
 
 **Résultat :**
 ![Résultat Prompt A](captures/partie7_prompt1.png)
+
+
+#### Prompt B — en fournissant le document
+
+**Prompt :**
+
+[Joindre ou coller le PDF "La psychologie humaine"]
+
+Quels sont les facteurs de protection contre les troubles mentaux mentionnés dans le document, et quel modèle explicatif combine facteurs de vulnérabilité et facteurs de stress ?
+
+
+**Résultat :**
+![Résultat Prompt B](captures/partie7_prompt2.png)
