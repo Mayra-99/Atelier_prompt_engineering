@@ -392,3 +392,5 @@ Format : une section par visualisation.
 
 **Résultat :**
 ![Résultat 6.2](captures/partie6_tache2.png)
+
+
