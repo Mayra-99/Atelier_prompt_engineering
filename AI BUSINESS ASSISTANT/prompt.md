@@ -127,4 +127,29 @@ Ce prompt contient en réalité 3 sous-tâches distinctes, mélangées en une se
 | 2 | Prioriser ces problèmes par importance/fréquence | « Classe ces problèmes du plus important au moins important » |
 | 3 | Formuler des recommandations | « Pour chacun des problèmes les plus importants, propose une recommandation concrète » |
 
-**Observation :** le prompt initial demande implicitement 3 opérations différentes (extraire, prioriser, recommander) en une seule fois. Les traiter séparément permet de vérifier chaque étape indépendamment plutôt que d'obtenir un résultat global difficile à contrôler.
+**Observation :** le prompt initial demande implicitement 3 opérations différentes (extraire, prioriser, recommander) en une seule fois. Les traiter séparément permet de vérifier chaque étape indépendamment plutôt que d'obtenir un résultat global difficile à contrôler.*
+
+### Tâche 3.2 — Texte avec contraintes + vérification
+
+**Premier prompt (texte + contraintes) :**
+
+Analyse le texte suivant et identifie les informations clés (chiffres, difficultés rencontrées, recommandations).
+
+
+
+Texte : [Rapport d'activité — BARAKA DISTRIBUTION — Août 2026  Au cours du mois d'août, BARAKA DISTRIBUTION a effectué 1 250 livraisons, contre 1 060 en juillet, soit une hausse de 18 %. Le chiffre d'affaires du mois s'élève à 9 375 000 FCFA. Le taux de satisfaction client mesuré par sondage post-livraison atteint 94 %, en progression de 3 points par rapport au mois précédent.  Les principales difficultés observées concernent les livraisons du vendredi soir, où le délai moyen dépasse de 12 minutes le délai habituel, en raison d'une forte demande concentrée entre 19h et 21h dans les quartiers périphériques de Dakar. Trois livreurs supplémentaires ont été recrutés en cours de mois pour absorber cette charge, mais leur formation ne sera achevée qu'en septembre.  Sur le plan des produits, le poisson thiof et les œufs restent les articles les plus commandés, représentant à eux deux 42 % du volume total des commandes. Un incident isolé a été signalé concernant un lot d'huile végétale livré avec un emballage endommagé ; les clients concernés ont été remboursés intégralement.  La direction recommande de renforcer les équipes de livraison le week-end avant la fin du mois de septembre, et d'ouvrir une deuxième zone de stockage pour réduire les distances parcourues vers les quartiers périphériques.  ]
+
+
+
+Contraintes :
+
+
+
+Reste strictement factuel
+
+N'invente aucune information absente du texte
+
+Ne cite que des éléments réellement présents dans le texte
+
+**Résultat du 1er prompt :**
+![Résultat 1er prompt](captures/partie3_2_prompt1.png)
