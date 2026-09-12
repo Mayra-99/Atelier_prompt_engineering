@@ -483,3 +483,20 @@ Quels sont les facteurs de protection contre les troubles mentaux mentionnés da
 
 **Résultat :**
 ![Résultat Prompt B](captures/partie7_prompt2.png)
+
+#### Prompt C — document + contraintes anti-hallucination
+
+**Prompt :**
+
+[Joindre ou coller le PDF "La psychologie humaine"]
+
+Quels sont les facteurs de protection contre les troubles mentaux mentionnés dans le document, et quel modèle explicatif combine facteurs de vulnérabilité et facteurs de stress ?
+
+Contraintes :
+
+Utilise uniquement le contexte fourni dans le document
+N'invente aucune information absente du document
+Si une information n'est pas trouvée dans le document, signale-le clairement
+Cite la section ou le passage utilisé
+**Résultat :**
+![Résultat Prompt C](captures/partie7_prompt3.png)
