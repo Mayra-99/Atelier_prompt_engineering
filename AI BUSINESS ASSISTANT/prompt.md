@@ -153,3 +153,17 @@ Ne cite que des éléments réellement présents dans le texte
 
 **Résultat du 1er prompt :**
 ![Résultat 1er prompt](captures/partie3_2_prompt1.png)
+
+**Second prompt (vérification de la réponse précédente) :**
+
+Relis ta réponse précédente et vérifie-la point par point :
+
+Y a-t-il des informations non justifiées par le texte source ?
+Y a-t-il des contradictions ?
+Des informations présentes dans le texte sont-elles absentes de ta réponse ?
+Y a-t-il d'éventuelles hallucinations (faits inventés) ?
+Les contraintes données initialement ont-elles été respectées ?
+Corrige ta réponse si nécessaire.
+
+**Résultat du second prompt :**
+![Résultat vérification](captures/partie3_2_prompt2.png)
