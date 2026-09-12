@@ -110,3 +110,21 @@ Le prompt structuré, lui, n'a pas mieux résolu l'ambiguïté que le zero-shot 
 - Structuré : à privilégier dès que le prompt doit être réutilisé ou maintenu dans une application, indépendamment de sa fiabilité brute
 
 **Limite méthodologique observée :** un premier test réalisé dans une même fenêtre de discussion avait montré une divergence (few-shot → neutre) due à une contamination par l'historique de conversation plutôt qu'à la technique elle-même. Toute comparaison de prompts doit être effectuée dans des fenêtres séparées.
+
+
+### Tâche 3.1 — Décomposition
+
+**Prompt à décomposer :**
+« Analyse ces avis clients et donne-moi les problèmes les plus importants ainsi que les recommandations. »
+
+**Décomposition identifiée :**
+
+Ce prompt contient en réalité 3 sous-tâches distinctes, mélangées en une seule phrase :
+
+| # | Sous-tâche identifiée | Sous-prompt correspondant |
+|---|---|---|
+| 1 | Extraire les problèmes mentionnés dans les avis | « Liste les problèmes mentionnés dans ces avis clients : [avis] » |
+| 2 | Prioriser ces problèmes par importance/fréquence | « Classe ces problèmes du plus important au moins important » |
+| 3 | Formuler des recommandations | « Pour chacun des problèmes les plus importants, propose une recommandation concrète » |
+
+**Observation :** le prompt initial demande implicitement 3 opérations différentes (extraire, prioriser, recommander) en une seule fois. Les traiter séparément permet de vérifier chaque étape indépendamment plutôt que d'obtenir un résultat global difficile à contrôler.
