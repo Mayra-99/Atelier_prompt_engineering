@@ -40,3 +40,15 @@ Classes possibles : positif, négatif, neutre.
 
 Résultat :
 ![Résultat 2.1](captures/partie2_zeroshot.png)
+
+### Tâche 2.2 — One-shot (1 exemple)
+
+Prompt :
+
+Exemple : "Livraison rapide, très satisfait" → positif
+
+Classe le commentaire suivant : "Le service est rapide mais l'application plante régulièrement."
+Classes possibles : positif, négatif, neutre.
+
+Résultat :
+![Résultat 2.2](captures/partie2_oneshot.png)
