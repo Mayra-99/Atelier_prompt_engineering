@@ -255,3 +255,25 @@ Le projet de migration du système de gestion des stocks de BARAKA DISTRIBUTION 
 
 **Résultat :**
 ![Résultat 5.1](captures/partie5_resume.png)
+
+### Tâche 5.2 — Traduction FR → EN
+
+**Document à traduire :**
+« La chaîne du froid est garantie de bout en bout grâce à des glacières certifiées ISO 22000. Chaque livraison est accompagnée d'un relevé de température consigné au moment du dépôt chez le client. »
+
+**Prompt :**
+Traduis le document suivant du français vers l'anglais.
+Contraintes :
+
+Conserver le sens
+Conserver la structure
+Conserver les termes techniques
+Ne pas résumer
+Ne rajoute aucune information
+
+Document : [**Document à traduire :**
+« La chaîne du froid est garantie de bout en bout grâce à des glacières certifiées ISO 22000. Chaque livraison est accompagnée d'un relevé de température consigné au moment du dépôt chez le client. »]
+
+
+**Résultat :**
+![Résultat 5.2](captures/partie5_traduction.png)
