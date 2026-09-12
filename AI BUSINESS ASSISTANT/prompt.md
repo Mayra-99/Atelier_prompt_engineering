@@ -230,3 +230,28 @@ Réponds uniquement avec le JSON, sans aucun texte avant ou après.
 
 **Résultat obtenu :**
 ![Résultat 4.2](captures/partie4_json_validation.png)
+
+## Partie 5 — Prompts pour les applications métier
+
+### Tâche 5.1 — Résumé de document
+
+
+
+**Prompt :**
+
+Résume le document suivant.
+Contraintes :
+
+Maximum 250 mots
+Conserver les informations factuelles
+Identifier les objectifs
+Identifier les résultats
+Identifier les recommandations
+N'invente aucune information absente du document
+
+Document : [**Document à résumer :**
+« Rapport de projet — Migration du système de gestion des stocks — BARAKA DISTRIBUTION. Ce projet visait à réduire les ruptures de stock récurrentes sur les produits les plus vendus et à améliorer la traçabilité des livraisons entre l'entrepôt central et les points de vente. Un nouveau logiciel de suivi des stocks a été déployé en juillet 2026 sur l'ensemble des trois entrepôts. Après six semaines d'utilisation, les ruptures de stock ont diminué de 35 %, et le temps moyen de traitement d'une commande est passé de 45 à 28 minutes. Deux employés ont néanmoins signalé des difficultés à utiliser l'interface mobile de l'application. Il est recommandé d'organiser une session de formation complémentaire pour les équipes terrain et d'étendre le déploiement à l'entrepôt secondaire de Thiès avant la fin de l'année. »]
+Le projet de migration du système de gestion des stocks de BARAKA DISTRIBUTION avait pour objectifs de réduire les ruptures de stock récurrentes sur les produits les plus vendus et d’améliorer la traçabilité des livraisons entre l’entrepôt central et les points de vente.
+
+**Résultat :**
+![Résultat 5.1](captures/partie5_resume.png)
