@@ -373,3 +373,22 @@ Format : tableau avec colonnes Problème / Détection / Traitement / Risques ass
 
 **Résultat :**
 ![Résultat 6.1](captures/partie6_tache1.png)
+
+### Tâche 6.2 — Visualisations pertinentes
+
+**Prompt :**
+
+Propose les visualisations les plus pertinentes pour comprendre la consommation énergétique du bâtiment.
+
+Pour chaque visualisation, indique :
+
+Le type de graphique
+Les variables utilisées
+L'objectif
+L'interprétation attendue
+
+Format : une section par visualisation.
+
+
+**Résultat :**
+![Résultat 6.2](captures/partie6_tache2.png)
