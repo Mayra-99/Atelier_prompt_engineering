@@ -412,3 +412,22 @@ Format : tableau avec colonnes Modèle / Principe / Avantages / Limites / Type d
 
 **Résultat :**
 ![Résultat 6.3](captures/partie6_tache3.png)
+
+### Tâche 6.4 — Métriques de classification
+
+**Prompt :**
+
+Explique les métriques de classification suivantes : Accuracy, Precision, Recall, F1-score, ROC-AUC.
+
+Pour chacune, donne :
+
+La définition
+L'interprétation
+Un exemple concret
+Le contexte dans lequel elle est particulièrement utile
+
+Format : une section par métrique.
+
+
+**Résultat :**
+![Résultat 6.4](captures/partie6_tache4.png)
