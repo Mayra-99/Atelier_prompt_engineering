@@ -314,3 +314,20 @@ Retourne uniquement un JSON valide avec ces 6 champs. Si une information est abs
 
 **Résultat :**
 ![Résultat 5.4](captures/partie5_facture.png)
+
+### Tâche 5.5 — Email pour un retard de livraison
+
+**Prompt :**
+
+Rédige un email destiné à un client dont la livraison a pris du retard.
+Objectifs :
+
+Reconnaître le retard
+Présenter des excuses
+Expliquer la situation sans inventer de cause précise
+Proposer une solution
+Ton : professionnel, courtois et rassurant
+Longueur maximale : 150 mots
+
+**Résultat :**
+![Résultat 5.5](captures/partie5_email.png)
