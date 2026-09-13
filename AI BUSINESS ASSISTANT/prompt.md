@@ -540,5 +540,19 @@ Texte : le meme
 **Résultat :**
 ![Résultat Prompt B](captures/partie8_promptB.png)
 
+### Prompt C (version enrichie, plus de composants de prompt)
+
+**Prompt :**
+
+Rôle : Tu es analyste chargé de synthétiser des rapports d'activité pour la direction.
+Tâche : Résume le texte suivant.
+Données d'entrée : le meme texte
+Contraintes : 150 mots maximum, conserver les chiffres clés et les recommandations, n'inventer aucune information absente du texte.
+Format de sortie : liste de 5 points.
+
+
+**Résultat :**
+![Résultat Prompt C](captures/partie8_promptC.png)
+
 
 
