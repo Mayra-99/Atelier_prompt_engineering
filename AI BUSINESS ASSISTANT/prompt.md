@@ -500,3 +500,32 @@ Si une information n'est pas trouvée dans le document, signale-le clairement
 Cite la section ou le passage utilisé
 **Résultat :**
 ![Résultat Prompt C](captures/partie7_prompt3.png)
+
+## Partie 8 — Évaluation et optimisation des prompts
+
+
+
+---
+
+### Prompt A (donné tel quel par l'énoncé)
+
+**Prompt :**
+Résume ce texte.
+
+Texte : [**Texte à résumer (le même pour les 3 prompts) :**
+
+Rapport d'activité — BARAKA DISTRIBUTION — Août 2026
+
+Au cours du mois d'août, BARAKA DISTRIBUTION a effectué 1 250 livraisons, contre 1 060 en juillet, soit une hausse de 18 %. Le chiffre d'affaires du mois s'élève à 9 375 000 FCFA. Le taux de satisfaction client mesuré par sondage post-livraison atteint 94 %, en progression de 3 points par rapport au mois précédent.
+
+Les principales difficultés observées concernent les livraisons du vendredi soir, où le délai moyen dépasse de 12 minutes le délai habituel, en raison d'une forte demande concentrée entre 19h et 21h dans les quartiers périphériques de Dakar. Trois livreurs supplémentaires ont été recrutés en cours de mois pour absorber cette charge, mais leur formation ne sera achevée qu'en septembre.
+
+Sur le plan des produits, le poisson thiof et les œufs restent les articles les plus commandés, représentant à eux deux 42 % du volume total des commandes. Un incident isolé a été signalé concernant un lot d'huile végétale livré avec un emballage endommagé ; les clients concernés ont été remboursés intégralement.
+
+La direction recommande de renforcer les équipes de livraison le week-end avant la fin du mois de septembre, et d'ouvrir une deuxième zone de stockage pour réduire les distances parcourues vers les quartiers périphériques.]
+
+
+**Résultat :**
+![Résultat Prompt A](captures/partie8_promptA.png)
+
+
