@@ -556,3 +556,22 @@ Format de sortie : liste de 5 points.
 
 
 
+### Évaluation comparative des 3 réponses (résultats réels, testés sur mon LLM)
+
+| Critère | Prompt A (« Résume ce texte ») | Prompt B (« ... en 150 mots ») | Prompt C (structuré, 5 points) |
+|---|---|---|---|
+| Longueur | 124 mots (aucune contrainte donnée) | 145 mots (contrainte 150 respectée) | 5 points, format imposé respecté |
+| Chiffre juillet (1060) | **Absent** | Présent | Présent |
+| Délai moyen (12 minutes) | **Absent** | Présent | Présent |
+| Autres chiffres (1250, 18%, CA, 94%, 42%) | Présents | Présents | Présents |
+| Recommandations mentionnées | Présentes | Présentes | Présentes, isolées dans leur propre point |
+| Information inventée ? | Non détectée | Non détectée | Non détectée |
+| Format exploitable | Paragraphe à lire en entier | Paragraphe à lire en entier, un peu plus dense | Liste scannable, chaque info repérable en un coup d'œil |
+
+**Observation :**
+Les 3 prompts conservent les recommandations et ne présentent aucune hallucination détectée — sur ce point précis, le modèle testé est fiable même sans consigne stricte. La vraie différence se joue ailleurs :
+
+1. **Complétude des chiffres** : seul le Prompt A (sans aucune contrainte) omet deux données précises — le chiffre de juillet (1 060) et le retard moyen de 12 minutes. Livré à lui-même sans consigne de longueur, le modèle a fait ses propres arbitrages de "ce qui compte", et a jugé ces deux détails secondaires. Dès qu'une contrainte de longueur est fixée (Prompt B), le modèle semble se forcer à être plus exhaustif pour "remplir" l'espace alloué.
+2. **Forme du résultat** : B et C ont un contenu quasi identique en substance — la différence entre eux n'est pas la fiabilité mais la présentation : B reste un texte à lire, C est directement scannable en 5 points.
+
+**Conclusion :** contrairement à l'intuition qu'un prompt minimal (A) devrait être "moins bon", c'est surtout **moins complet sur les détails chiffrés**, pas moins fiable. La contrainte de longueur (B) a eu un effet positif inattendu : elle a poussé le modèle à être plus exhaustif, pas seulement à respecter un nombre de mots. Le prompt structuré (C) n'améliore pas le contenu par rapport à B ici — son intérêt est la lisibilité, pas la fiabilité.
