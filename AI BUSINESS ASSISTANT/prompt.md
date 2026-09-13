@@ -528,4 +528,17 @@ La direction recommande de renforcer les équipes de livraison le week-end avant
 **Résultat :**
 ![Résultat Prompt A](captures/partie8_promptA.png)
 
+### Prompt B (donné tel quel par l'énoncé)
+
+**Prompt :**
+
+Résume ce texte en 150 mots.
+
+Texte : le meme 
+
+
+**Résultat :**
+![Résultat Prompt B](captures/partie8_promptB.png)
+
+
 
